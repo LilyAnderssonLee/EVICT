@@ -1,0 +1,4 @@
+{
+    "priority":"development",
+    "clusterOptions":"--qos=normal",
+}

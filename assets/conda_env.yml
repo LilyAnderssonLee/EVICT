@@ -1,0 +1,19 @@
+name: enterovirus_env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - blast=2.16.0
+  - spades=4.2.0
+  - seqkit=2.10.0
+  - nextflow=25.04.6
+  - nf-core=3.3.2
+  - python=3.12
+  - pandas
+  - seaborn
+  - matplotlib
+  - jinja2
+  - pip
+  - pip:
+      - base64io  # provides BytesIO-like base64 support if needed

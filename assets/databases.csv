@@ -1,0 +1,2 @@
+tool,db_name,db_params,db_path
+kraken2,k2_pluspf,,/home/proj/development/microbial/metagenomics/databases/kraken/k2_pluspf_20231009.tar.gz
