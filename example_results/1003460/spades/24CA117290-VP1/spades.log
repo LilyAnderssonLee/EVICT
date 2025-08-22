@@ -1,11 +1,11 @@
-Command line: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades.py	-t	20	-m	180	-1	/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_1.fastq.gz	-2	/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_2.fastq.gz	-o	/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample	--rnaviral
+Command line: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades.py	-t	20	-m	180	-1	/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_1.fastq.gz	-2	/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_2.fastq.gz	-o	/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1	--rnaviral	
 
 System information:
   SPAdes version: 4.0.0
   Python version: 3.12.2
   OS: Linux-3.10.0-1160.53.1.el7.x86_64-x86_64-with-glibc2.17
 
-Output dir: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample
+Output dir: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1
 Mode: ONLY assembling (without read error correction)
 Debug mode is turned OFF
 
@@ -15,8 +15,8 @@ Dataset parameters:
   Reads:
     Library number: 1, library type: paired-end
       orientation: fr
-      left reads: ['/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_1.fastq.gz']
-      right reads: ['/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_2.fastq.gz']
+      left reads: ['/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_1.fastq.gz']
+      right reads: ['/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_2.fastq.gz']
       interlaced reads: not specified
       single reads: not specified
       merged reads: not specified
@@ -28,39 +28,39 @@ Assembly parameters:
   Coverage cutoff is turned OFF
   Assembly graph output will use GFA v1.2 format
 Other parameters:
-  Dir for temp files: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/tmp
+  Dir for temp files: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/tmp
   Threads: 20
   Memory limit (in Gb): 180
 
 
-======= SPAdes pipeline started. Log can be found here: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/spades.log
+======= SPAdes pipeline started. Log can be found here: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/spades.log
 
-/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_1.fastq.gz: max reads length: 151
-/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/111111/bowtie2/align/test_sample_test_sample.unmapped_2.fastq.gz: max reads length: 151
+/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_1.fastq.gz: max reads length: 151
+/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_2.fastq.gz: max reads length: 151
 
 Reads length: 151
 
 K values to be used: [21, 49, 73]
 
-===== Before start started.
+===== Before start started. 
 
 
-===== Assembling started.
+===== Assembling started. 
 
 
-===== K21 started.
+===== K21 started. 
 
 
-== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/rnaviral_mode.info
+== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/rnaviral_mode.info
 
-  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/config.info"
-  0:00:00.002     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/mda_mode.info"
-  0:00:00.002     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/meta_mode.info"
-  0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/rnaviral_mode.info"
+  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/config.info"
+  0:00:00.002     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/mda_mode.info"
+  0:00:00.002     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/meta_mode.info"
+  0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/configs/rnaviral_mode.info"
   0:00:00.003     1M / 33M   INFO    General                 (memory_limit.cpp          :  55)   Memory limit set to 180 Gb
   0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  : 102)   Starting SPAdes, built from N/A, git revision N/A
   0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  : 103)   Maximum k-mer length: 128
-  0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/dataset.info") with K=21
+  0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/dataset.info") with K=21
   0:00:00.003     1M / 33M   INFO    General                 (main.cpp                  : 105)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
   0:00:00.003     1M / 33M   INFO    General                 (pipeline.cpp              : 212)   SPAdes started
   0:00:00.003     1M / 33M   INFO    General                 (pipeline.cpp              : 225)   Starting from stage: read_conversion
@@ -287,27 +287,27 @@ K values to be used: [21, 49, 73]
   0:00:24.034    29M / 6778M INFO    General                 (simplification.cpp        : 512)     Edges: 1718
   0:00:24.034    29M / 6778M INFO    General                 (simplification.cpp        : 513)     Vertices: 990
   0:00:24.034    29M / 6778M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Contig Output (id: contig_output)
-  0:00:24.035    29M / 6778M INFO    General                 (read_converter.cpp        : 135)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/simplified_contigs"
+  0:00:24.035    29M / 6778M INFO    General                 (read_converter.cpp        : 135)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/simplified_contigs"
   0:00:24.039    33M / 6778M INFO    General                 (binary_converter.cpp      : 143)   859 reads written
   0:00:24.042    29M / 6778M INFO    General                 (pipeline.cpp              : 292)   SPAdes finished
   0:00:24.043     1M / 6778M INFO    General                 (main.cpp                  : 131)   Assembling time: 0 hours 0 minutes 24 seconds
 
-===== K21 finished.
+===== K21 finished. 
 
 
-===== K49 started.
+===== K49 started. 
 
 
-== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/rnaviral_mode.info
+== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/rnaviral_mode.info
 
-  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/config.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/mda_mode.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/meta_mode.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/rnaviral_mode.info"
+  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/config.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/mda_mode.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/meta_mode.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/configs/rnaviral_mode.info"
   0:00:00.001     1M / 33M   INFO    General                 (memory_limit.cpp          :  55)   Memory limit set to 180 Gb
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 102)   Starting SPAdes, built from N/A, git revision N/A
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 103)   Maximum k-mer length: 128
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/dataset.info") with K=49
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/dataset.info") with K=49
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 105)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
   0:00:00.001     1M / 33M   INFO    General                 (pipeline.cpp              : 212)   SPAdes started
   0:00:00.002     1M / 33M   INFO    General                 (pipeline.cpp              : 225)   Starting from stage: read_conversion
@@ -318,7 +318,7 @@ K values to be used: [21, 49, 73]
   0:00:00.002     1M / 33M   INFO   StageManager             (stage.cpp                 : 189)   STAGE == Binary Read Conversion (id: read_conversion)
   0:00:00.003     1M / 33M   INFO    General                 (read_converter.cpp        :  57)   Binary reads detected
   0:00:00.004     1M / 33M   INFO   StageManager             (stage.cpp                 : 189)   STAGE == de Bruijn graph construction (id: construction)
-  0:00:00.004     1M / 33M   INFO    General                 (construction.cpp          : 115)   Contigs from previous K will be used: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/simplified_contigs
+  0:00:00.004     1M / 33M   INFO    General                 (construction.cpp          : 115)   Contigs from previous K will be used: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/simplified_contigs
   0:00:00.024     1M / 33M   INFO    General                 (construction.cpp          : 150)   Max read length 151
   0:00:00.024     1M / 33M   INFO    General                 (construction.cpp          : 156)   Average read length 124.446
   0:00:00.024     1M / 33M   INFO    General                 (stage.cpp                 : 121)   PROCEDURE == k+1-mer counting (id: construction:kpomer_counting)
@@ -522,27 +522,27 @@ K values to be used: [21, 49, 73]
   0:00:16.054    29M / 7162M INFO    General                 (simplification.cpp        : 512)     Edges: 64
   0:00:16.054    29M / 7162M INFO    General                 (simplification.cpp        : 513)     Vertices: 66
   0:00:16.054    29M / 7162M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Contig Output (id: contig_output)
-  0:00:16.054    29M / 7162M INFO    General                 (read_converter.cpp        : 135)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/simplified_contigs"
+  0:00:16.054    29M / 7162M INFO    General                 (read_converter.cpp        : 135)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/simplified_contigs"
   0:00:16.057    33M / 7162M INFO    General                 (binary_converter.cpp      : 143)   32 reads written
   0:00:16.061    29M / 7162M INFO    General                 (pipeline.cpp              : 292)   SPAdes finished
   0:00:16.062     1M / 7162M INFO    General                 (main.cpp                  : 131)   Assembling time: 0 hours 0 minutes 16 seconds
 
-===== K49 finished.
+===== K49 finished. 
 
 
-===== K73 started.
+===== K73 started. 
 
 
-== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/rnaviral_mode.info
+== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/config.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/mda_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/meta_mode.info /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/rnaviral_mode.info
 
-  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/config.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/mda_mode.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/meta_mode.info"
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/rnaviral_mode.info"
+  0:00:00.000     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/config.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/mda_mode.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/meta_mode.info"
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  :  94)   Loaded config from "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/configs/rnaviral_mode.info"
   0:00:00.001     1M / 33M   INFO    General                 (memory_limit.cpp          :  55)   Memory limit set to 180 Gb
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 102)   Starting SPAdes, built from N/A, git revision N/A
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 103)   Maximum k-mer length: 128
-  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/dataset.info") with K=73
+  0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 104)   Assembling dataset ("/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/dataset.info") with K=73
   0:00:00.001     1M / 33M   INFO    General                 (main.cpp                  : 105)   Maximum # of threads to use (adjusted due to OMP capabilities): 20
   0:00:00.001     1M / 33M   INFO    General                 (pipeline.cpp              : 212)   SPAdes started
   0:00:00.001     1M / 33M   INFO    General                 (pipeline.cpp              : 225)   Starting from stage: read_conversion
@@ -554,7 +554,7 @@ K values to be used: [21, 49, 73]
   0:00:00.002     1M / 33M   INFO   StageManager             (stage.cpp                 : 189)   STAGE == Binary Read Conversion (id: read_conversion)
   0:00:00.002     1M / 33M   INFO    General                 (read_converter.cpp        :  57)   Binary reads detected
   0:00:00.003     1M / 33M   INFO   StageManager             (stage.cpp                 : 189)   STAGE == de Bruijn graph construction (id: construction)
-  0:00:00.003     1M / 33M   INFO    General                 (construction.cpp          : 115)   Contigs from previous K will be used: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/simplified_contigs
+  0:00:00.003     1M / 33M   INFO    General                 (construction.cpp          : 115)   Contigs from previous K will be used: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/simplified_contigs
   0:00:00.021     1M / 33M   INFO    General                 (construction.cpp          : 150)   Max read length 151
   0:00:00.021     1M / 33M   INFO    General                 (construction.cpp          : 156)   Average read length 124.446
   0:00:00.021     1M / 33M   INFO    General                 (stage.cpp                 : 121)   PROCEDURE == k+1-mer counting (id: construction:kpomer_counting)
@@ -812,8 +812,8 @@ K values to be used: [21, 49, 73]
   0:00:21.682    48M / 4238M INFO    General                 (mismatch_correction.cpp   : 387)   All edges processed
   0:00:21.682    48M / 4238M INFO    General                 (mismatch_correction.cpp   : 442)   Corrected 0 nucleotides
   0:00:21.682    48M / 4238M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Contig Output (id: contig_output)
-  0:00:21.682    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/before_rr.fasta"
-  0:00:21.686    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 155)   Writing GFA graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_after_simplification.gfa"
+  0:00:21.682    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/before_rr.fasta"
+  0:00:21.686    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 155)   Writing GFA graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph_after_simplification.gfa"
   0:00:21.691    48M / 4238M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Paired Information Counting (id: late_pair_info_count)
   0:00:21.695    48M / 4238M INFO    General                 (graph_pack_helpers.cpp    :  54)   Normalizing k-mer map. Total 34946 kmers to process
   0:00:21.695    48M / 4238M INFO    General                 (graph_pack_helpers.cpp    :  56)   Normalizing done
@@ -832,45 +832,45 @@ K values to be used: [21, 49, 73]
   0:00:23.311    48M / 4238M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Repeat Resolving (id: repeat_resolving)
   0:00:23.311    48M / 4238M WARN    General                 (repeat_resolving.cpp      :  82)   Insert size was not estimated for any of the paired libraries, repeat resolution module will not run.
   0:00:23.311    48M / 4238M INFO   StageManager             (stage.cpp                 : 189)   STAGE == Contig Output (id: contig_output)
-  0:00:23.311    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/before_rr.fasta"
-  0:00:23.314    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 155)   Writing GFA graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_with_scaffolds.gfa"
-  0:00:23.315    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 169)   Outputting FastG graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph.fastg"
-  0:00:23.317    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/final_contigs.fasta"
+  0:00:23.311    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/before_rr.fasta"
+  0:00:23.314    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 155)   Writing GFA graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph_with_scaffolds.gfa"
+  0:00:23.315    48M / 4238M INFO    General                 (contig_output_stage.cpp   : 169)   Outputting FastG graph to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph.fastg"
+  0:00:23.317    48M / 4238M INFO    General                 (contig_output.hpp         :  20)   Outputting contigs to "/home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/final_contigs.fasta"
   0:00:23.318    48M / 4238M INFO    General                 (pipeline.cpp              : 292)   SPAdes finished
   0:00:23.324     1M / 4238M INFO    General                 (main.cpp                  : 131)   Assembling time: 0 hours 0 minutes 23 seconds
 
-===== K73 finished.
+===== K73 finished. 
 
 
-===== Copy files started.
+===== Copy files started. 
 
 
-== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3 /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/copy_files.py /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/before_rr.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/before_rr.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_after_simplification.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph_after_simplification.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/final_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/first_pe_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/first_pe_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/strain_graph.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/strain_graph.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/scaffolds.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/scaffolds.paths /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.paths /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_with_scaffolds.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph_with_scaffolds.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph.fastg /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph.fastg /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/final_contigs.paths /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/contigs.paths
+== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3 /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/copy_files.py /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/before_rr.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/before_rr.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph_after_simplification.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/assembly_graph_after_simplification.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/final_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/first_pe_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/first_pe_contigs.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/strain_graph.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/strain_graph.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/scaffolds.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/scaffolds.fasta /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/scaffolds.paths /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/scaffolds.paths /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph_with_scaffolds.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/assembly_graph_with_scaffolds.gfa /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/assembly_graph.fastg /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/assembly_graph.fastg /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/final_contigs.paths /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/contigs.paths
 
 
-===== Copy files finished.
+===== Copy files finished. 
 
 
-===== Assembling finished.
+===== Assembling finished. 
 
 
-===== Breaking scaffolds started.
+===== Breaking scaffolds started. 
 
 
-== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3 /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.fasta --misc_dir /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/misc --threshold_for_breaking_scaffolds 3
+== Running: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3 /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py --result_scaffolds_filename /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/scaffolds.fasta --misc_dir /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/misc --threshold_for_breaking_scaffolds 3
 
 
-===== Breaking scaffolds finished.
+===== Breaking scaffolds finished. 
 
 
-===== Terminate started.
+===== Terminate started. 
 
 
-===== Terminate finished.
+===== Terminate finished. 
 
- * Assembled contigs are in /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/contigs.fasta
- * Assembly graph is in /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph.fastg
- * Assembly graph in GFA format is in /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph_with_scaffolds.gfa
+ * Assembled contigs are in /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/contigs.fasta
+ * Assembly graph is in /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/assembly_graph.fastg
+ * Assembly graph in GFA format is in /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/assembly_graph_with_scaffolds.gfa
 
 ======= SPAdes pipeline finished WITH WARNINGS!
 
@@ -878,9 +878,9 @@ K values to be used: [21, 49, 73]
  * 0:00:23.302    48M / 4238M WARN    General                 (pair_info_count.cpp       : 177)   Unable to estimate insert size for paired library #0
  * 0:00:23.311    48M / 4238M WARN    General                 (pair_info_count.cpp       : 183)   None of paired reads aligned properly. Please, check orientation of your read pairs.
  * 0:00:23.311    48M / 4238M WARN    General                 (repeat_resolving.cpp      :  82)   Insert size was not estimated for any of the paired libraries, repeat resolution module will not run.
-======= Warnings saved to /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/warnings.log
+======= Warnings saved to /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/warnings.log
 
-SPAdes log can be found here: /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/spades.log
+SPAdes log can be found here: /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/spades.log
 
 Thank you for using rnaviralSPAdes! If you use it in your research, please cite:
 

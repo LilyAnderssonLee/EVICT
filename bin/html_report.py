@@ -20,7 +20,7 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
         Examples:
-        python EV_typing.py --ticket_nr 111111 --blast-file /path/to/sample.blast
+        python EV_typing.py --ticket_nr 1003460 --blast-file /path/to/sample.blast
         """
     )
     parser.add_argument ('--ticket-nr', type=int, required=True, help='Ticket number')
