@@ -99,3 +99,5 @@ taxprofiler_results/<ticket_id>/
 - **fastp/** – adapter & primer–trimmed reads
 - **bbduk/** – low-complexity–filtered reads
 - **bowtie2/** – host-removal outputs (alignments and unmapped FASTQs); reads unmapped to the human genome are used for SPAdes analysis.
+
+To check the final **html report** in `example_results/1003460/report/`, please download and open it with your browser.
