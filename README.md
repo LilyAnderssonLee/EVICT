@@ -9,6 +9,10 @@ Reads are pre-processed with **[nf-core/taxprofiler](https://github.com/nf-core/
 - **BLAST** → against `nt_viruses` (restricted by `taxid_EV.txt`)
 - **Report** → simple HTML summary
 
+<p align="center">
+     <img title="Enterovirus typing" src="assets/metro-map.png">
+</p>
+
 ## Install
 ```bash
 git clone git@github.com:LilyAnderssonLee/entero_typing.git
