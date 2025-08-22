@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25)"
+   sodipodi:docname="drawing.svg"
+   inkscape:export-filename="drawing.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.97088537"
+     inkscape:cx="363.07067"
+     inkscape:cy="356.37575"
+     inkscape:window-width="1456"
+     inkscape:window-height="789"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="g18488-54-8"
+     inkscape:export-bgcolor="#ffffffff"
+     showguides="true" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-6"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-0"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-0-1"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-0-1-0"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-0-6"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect3-0-6-7"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g18488-54-8"
+       transform="translate(-89.429148,-37.30624)"
+       inkscape:label="Simple"
+       inkscape:export-filename="file_simple.svg"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200">
+      <g
+         id="g1"
+         transform="matrix(0.75026257,0,0,0.69999211,0.85929743,32.950067)">
+        <g
+           id="g18488-54"
+           transform="translate(2.6458305,-2.6458253)"
+           inkscape:label="Simple"
+           inkscape:export-filename="file_simple.svg"
+           inkscape:export-xdpi="200"
+           inkscape:export-ydpi="200"
+           style="display:inline">
+          <path
+             id="path6276-4-4"
+             style="fill:#ffffff;stroke-width:0.230702"
+             d="m 132.29166,93.927072 v 21.166668 h 15.87501 V 99.218748 l -5.29168,-5.291676 z"
+             sodipodi:nodetypes="cccccc" />
+          <path
+             id="path5862-1"
+             d="m 149.48958,97.895832 c 0,-0.264576 -0.26458,-0.529164 -0.52917,-0.793752 l -4.49791,-3.968748 c -0.26458,-0.264588 -0.52917,-0.529164 -0.82788,-0.529164 l -4.72837,-2e-5 -6.61459,2e-5 c -0.79375,2e-6 -1.32292,0.529164 -1.32292,1.322916 v 21.166666 c 0,0.79375 0.52917,1.32292 1.32292,1.32292 h 7.93751 7.9375 c 0.79374,0 1.32291,-0.52917 1.32291,-1.32292 z m -1.32291,17.197918 H 132.29166 V 93.927084 h 10.58333 v 4.7625 c 0,0.317508 0.20353,0.529164 0.52917,0.529164 h 4.76251 z"
+             inkscape:connector-curvature="0"
+             sodipodi:nodetypes="cccscsccscscccccssccc"
+             style="stroke-width:0.23167" />
+          <path
+             id="rect18347-2"
+             style="fill-rule:evenodd;stroke-width:0.122027;paint-order:fill markers stroke"
+             d="m 131.01752,101.8646 h 18.42326 c 0.75993,0 1.37171,0.49706 1.37171,1.1145 l 1e-5,2.85421 -1e-5,2.85426 c 0,0.61744 -0.61178,1.1145 -1.37171,1.1145 h -18.42326 c -0.75992,0 -1.3717,-0.49706 -1.3717,-1.1145 v -2.85425 -2.85422 c 0,-0.61744 0.61178,-1.1145 1.3717,-1.1145 z"
+             sodipodi:nodetypes="ccscsccscsc"
+             inkscape:export-filename=".\file_single.svg"
+             inkscape:export-xdpi="200"
+             inkscape:export-ydpi="200" />
+          <text
+             xml:space="preserve"
+             style="font-weight:bold;font-size:5.29167px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro, Bold';text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.227951;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:0.6;stroke-dasharray:none;stroke-dashoffset:2.00001;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000000"
+             x="140.33896"
+             y="107.2118"
+             id="text18569-6"><tspan
+               sodipodi:role="line"
+               id="tspan18567-42"
+               style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.227951"
+               x="140.33896"
+               y="107.2118">fastq</tspan></text>
+        </g>
+        <path
+           id="path6276-4-4-6"
+           style="fill:#ffffff;stroke-width:0.230702"
+           d="m 132.29166,93.927072 v 21.166668 h 15.87501 V 99.218748 l -5.29168,-5.291676 z"
+           sodipodi:nodetypes="cccccc" />
+        <path
+           id="path5862-1-1"
+           d="m 149.48958,97.895832 c 0,-0.264576 -0.26458,-0.529164 -0.52917,-0.793752 l -4.49791,-3.968748 c -0.26458,-0.264588 -0.52917,-0.529164 -0.82788,-0.529164 h -3.40545 -7.93751 c -0.79375,0 -1.32292,0.529164 -1.32292,1.322916 v 21.166666 c 0,0.79375 0.52917,1.32292 1.32292,1.32292 l 9.26042,-2e-5 6.61459,2e-5 c 0.79374,0 1.32291,-0.52917 1.32291,-1.32292 z m -1.32291,17.197918 H 132.29166 V 93.927084 h 10.58333 v 4.7625 c 0,0.317508 0.20353,0.529164 0.52917,0.529164 h 4.76251 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="cccscsccscscccccssccc"
+           style="stroke-width:0.23167" />
+        <path
+           id="rect18347-2-5"
+           style="fill-rule:evenodd;stroke-width:0.122027;paint-order:fill markers stroke"
+           d="m 131.01752,101.8646 h 18.42326 c 0.75993,0 1.37171,0.49706 1.37171,1.1145 v 2.85422 2.85425 c 0,0.61744 -0.61178,1.1145 -1.37171,1.1145 h -18.42326 c -0.75992,0 -1.3717,-0.49706 -1.3717,-1.1145 l 1e-5,-5.50008 -1e-5,-0.20839 c -2e-5,-0.61744 0.61178,-1.1145 1.3717,-1.1145 z"
+           sodipodi:nodetypes="ccscsccscsc"
+           inkscape:export-filename=".\file_single.svg"
+           inkscape:export-xdpi="200"
+           inkscape:export-ydpi="200" />
+        <text
+           xml:space="preserve"
+           style="font-weight:bold;font-size:5.29167px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro, Bold';text-align:center;text-orientation:upright;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.227951;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:0.6;stroke-dasharray:none;stroke-dashoffset:2.00001;stroke-opacity:1;paint-order:fill markers stroke;stop-color:#000000"
+           x="140.24466"
+           y="107.63814"
+           id="text18569-6-4"><tspan
+             sodipodi:role="line"
+             id="tspan18567-42-1"
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.227951"
+             x="140.24466"
+             y="107.63814">fastq</tspan></text>
+      </g>
+      <path
+         style="display:inline;fill:none;stroke:#24b064;stroke-width:3.24136;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 120.09833,105.14299 H 294.74161"
+         id="path2500-5-22"
+         sodipodi:nodetypes="cc"
+         inkscape:label="line_0"
+         inkscape:export-filename="line_0.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200" />
+      <circle
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.646;stroke-linecap:round;stroke-miterlimit:4.1;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
+         id="path3447"
+         cx="148.56943"
+         cy="104.74844"
+         inkscape:label="single_round"
+         inkscape:export-filename="circle_single.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"
+         r="2.6458333" />
+      <circle
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.646;stroke-linecap:round;stroke-miterlimit:4.1;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
+         id="path3447-6"
+         cx="192.50591"
+         cy="104.74844"
+         inkscape:label="single_round"
+         inkscape:export-filename="circle_single.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"
+         r="2.6458333" />
+      <circle
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.646;stroke-linecap:round;stroke-miterlimit:4.1;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
+         id="path3447-6-4"
+         cx="225.40642"
+         cy="104.74844"
+         inkscape:label="single_round"
+         inkscape:export-filename="circle_single.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"
+         r="2.6458333" />
+      <circle
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.646;stroke-linecap:round;stroke-miterlimit:4.1;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
+         id="path3447-6-4-0"
+         cx="258.42664"
+         cy="104.74844"
+         inkscape:label="single_round"
+         inkscape:export-filename="circle_single.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"
+         r="2.6458333" />
+      <circle
+         style="display:inline;fill:#ffffff;stroke:#000000;stroke-width:2.646;stroke-linecap:round;stroke-miterlimit:4.1;stroke-dasharray:none;paint-order:stroke markers fill;stop-color:#000000"
+         id="path3447-6-4-3"
+         cx="292.1153"
+         cy="104.74844"
+         inkscape:label="single_round"
+         inkscape:export-filename="circle_single.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"
+         r="2.6458333" />
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="128.03868"
+         y="91.076248"
+         id="text20792-8-7-4-2-3"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="128.03868"
+           y="91.076248">nf-core/taxprofiler</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="183.32736"
+         y="91.863792"
+         id="text20792-8-7-4-2-3-3"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-7"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="183.32736"
+           y="91.863792">SPAdes</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="215.58482"
+         y="91.872063"
+         id="text20792-8-7-4-2-3-3-1"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-7-3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="215.58482"
+           y="91.872063">BLAST</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="183.14845"
+         y="119.34705"
+         id="text20792-8-7-4-2-3-3-1-14"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-7-3-8"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="183.14845"
+           y="119.34705">De novo</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="183.14845"
+           y="123.75677"
+           id="tspan9">assembly</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="217.22853"
+         y="119.39356"
+         id="text20792-8-7-4-2-3-3-1-14-3"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="217.22853"
+           y="119.39356"
+           id="tspan9-4">Summary</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="217.22853"
+           y="123.80328"
+           id="tspan12">Filtering</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="248.70502"
+         y="119.46246"
+         id="text20792-8-7-4-2-3-3-1-14-3-1"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="248.70502"
+           y="119.46246"
+           id="tspan12-8">Filtering</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="248.70502"
+           y="123.87218"
+           id="tspan13">200bp &amp; 50X</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="245.8858"
+         y="91.053505"
+         id="text20792-8-7-4-2-3-3-1-1"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="245.8858"
+           y="91.053505"
+           id="tspan11">EV contigs</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:4.23333px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="281.49399"
+         y="91.076248"
+         id="text20792-8-7-4-2-3-3-1-9"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-7-3-5"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="281.49399"
+           y="91.076248">Report</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="96.91748"
+         y="119.46246"
+         id="text20792-8-7-4-2-3-2"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-5"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="96.91748"
+           y="119.46246">Amplicon</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="96.91748"
+           y="123.87218"
+           id="tspan6">Illumina</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="96.91748"
+           y="128.28191"
+           id="tspan7">Paired-end</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:3.52778px;line-height:1.25;font-family:Commissioner;-inkscape-font-specification:Commissioner;letter-spacing:0px;display:inline;stroke-width:0.264583"
+         x="137.70801"
+         y="119.46246"
+         id="text20792-8-7-4-2-3-1"
+         inkscape:export-filename=".\text20792-8-7-4-2-3.svg"
+         inkscape:export-xdpi="200"
+         inkscape:export-ydpi="200"><tspan
+           sodipodi:role="line"
+           id="tspan20790-9-3-7-7-9-1"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="137.70801"
+           y="119.46246">Trimming</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="137.70801"
+           y="123.87218"
+           id="tspan4">Filtering</tspan><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'Maven Pro';-inkscape-font-specification:'Maven Pro Bold';stroke-width:0.264583"
+           x="137.70801"
+           y="128.28191"
+           id="tspan5">Host removal</tspan></text>
+      <path
+         style="opacity:0.994872;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 138.15516,119.02782 c 0,0 0,-37.215933 0,-37.215933"
+         id="path3"
+         inkscape:path-effect="#path-effect3"
+         inkscape:original-d="M 138.15516,119.02782 V 81.811887"
+         transform="matrix(1,0,0,1.4744345,38.654689,-41.298827)" />
+      <path
+         style="display:inline;opacity:0.994872;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 138.15516,119.02782 c 0,0 0,-37.215933 0,-37.215933"
+         id="path3-1"
+         inkscape:path-effect="#path-effect3-0"
+         inkscape:original-d="M 138.15516,119.02782 V 81.811887"
+         transform="matrix(1,0,0,1.4744345,72.783312,-41.298827)" />
+      <path
+         style="display:inline;opacity:0.994872;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 138.15516,119.02782 c 0,0 0,-37.215933 0,-37.215933"
+         id="path3-1-0"
+         inkscape:path-effect="#path-effect3-0-6"
+         inkscape:original-d="M 138.15516,119.02782 V 81.811887"
+         transform="matrix(1,0,0,1.4744345,104.39071,-41.298827)" />
+      <path
+         style="display:inline;opacity:0.994872;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 138.15516,119.02782 c 0,0 0,-37.215933 0,-37.215933"
+         id="path3-1-0-1"
+         inkscape:path-effect="#path-effect3-0-6-7"
+         inkscape:original-d="M 138.15516,119.02782 V 81.811887"
+         transform="matrix(1,0,0,1.4744345,138.51933,-41.298827)" />
+      <path
+         style="display:inline;opacity:0.994872;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.246;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         d="m 138.15516,119.02782 c 0,0 0,-37.215933 0,-37.215933"
+         id="path3-0"
+         inkscape:path-effect="#path-effect3-6"
+         inkscape:original-d="M 138.15516,119.02782 V 81.811887"
+         transform="matrix(1,0,0,1.4744345,-11.213868,-41.298827)" />
+      <path
+         id="path2500-5-22-2-5"
+         style="color:#000000;display:inline;fill:#000000"
+         d="m 117.98165,101.70341 v 7.9375 h 2.64635 l 3.96875,-3.96823 -3.96875,-3.96875 v -5.2e-4 z" />
+    </g>
+  </g>
+</svg>
