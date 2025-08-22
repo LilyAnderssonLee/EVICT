@@ -1,7 +1,7 @@
 # Enterovirus genotyping
 
 Minimal pipeline for **Enterovirus genotyping** from **Illumina paired-end amplicons**.
-Reads are pre-processed with **[nf-core/taxprofiler](https://github.com/nf-core/taxprofiler)** (adapter/primer trimming, low-complexity filtering, host-removal), then assembled with **SPAdes**, identified by **BLAST**, EV contigs extracted, and a per-sample HTML report generated.
+Reads are pre-processed with **[nf-core/taxprofiler](https://github.com/nf-core/taxprofiler)** (adapter/primer trimming, low-complexity filtering, host-removal), then assembled with **SPAdes**, identified using **BLAST**. Enterovirus contigs are then extracted, filtered to retain only those longer than 200 bp with coverage greater than 50X, and summarized in a per-sample HTML report.
 
 ## Steps
 - **taxprofiler** → trim/filter/host-remove
@@ -99,5 +99,3 @@ taxprofiler_results/<ticket_id>/
 - **fastp/** – adapter & primer–trimmed reads
 - **bbduk/** – low-complexity–filtered reads
 - **bowtie2/** – host-removal outputs (alignments and unmapped FASTQs); reads unmapped to the human genome are used for SPAdes analysis.
-
-# Pipeline Metro Map
