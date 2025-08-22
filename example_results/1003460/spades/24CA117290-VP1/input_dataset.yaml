@@ -1,7 +1,0 @@
-- "left reads":
-  - "/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_1.fastq.gz"
-  "number": !!int "1"
-  "orientation": "fr"
-  "right reads":
-  - "/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/1003460/bowtie2/align/24CA117290-VP1_24CA117290-VP1.unmapped_2.fastq.gz"
-  "type": "paired-end"

@@ -34,7 +34,7 @@ sbatch --export=EV_CONTAINER=/path/to/evtyping_1.0.sif entero_typing.sh <ticket_
 Recommended: run taxprofiler with Docker first, then run the rest inside your image.
 ```bash
 # 1) taxprofiler (Docker profile)
-ticket=1003460
+ticket=111111
 nextflow run nf-core/taxprofiler -r 1.2.3 -profile docker \
   --input data/${ticket}/${ticket}_samplesheet.csv \
   --databases assets/databases.csv \
@@ -46,7 +46,7 @@ nextflow run nf-core/taxprofiler -r 1.2.3 -profile docker \
   -params-file assets/params.json -c assets/custom_taxprofiler.config -resume
 
 # 2) post-steps inside your Docker image (adjust <sample_id>)
-sample=1141847772D1-VP1
+sample=test_sample
 docker run --rm -it \
   -v "$(pwd)":/home/proj/development/microbial/metagenomics/enterovirus \
   -w /home/proj/development/microbial/metagenomics/enterovirus \
@@ -96,3 +96,4 @@ taxprofiler_results/<ticket_id>/
 - **bbduk/** – low-complexity–filtered reads
 - **bowtie2/** – host-removal outputs (alignments and unmapped FASTQs); reads unmapped to the human genome are used for SPAdes analysis.
 
+# Pipeline Metro Map

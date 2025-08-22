@@ -10,17 +10,17 @@ K 21
 ;FIXME introduce isolate mode
 mode base
 
-dataset /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/dataset.info
+dataset /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/dataset.info
 log_filename    log.properties
 
-output_base /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1
-tmp_dir /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/tmp/spades_mmfd46zz
+output_base /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample
+tmp_dir /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/tmp/spades_mmfd46zz
 
 main_iteration false
 ; iterative mode switcher, activates additional contigs usage
 use_additional_contigs false
 additional_contigs	tmp_contigs.fasta
-load_from /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K21/saves
+load_from /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/saves
 
 ; Multithreading options
 temp_bin_reads_dir	.bin_reads/

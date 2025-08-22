@@ -1,0 +1,106 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/config.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/mda_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/meta_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K21/configs/rnaviral_mode.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core
+  short_name: k21
+- STAGE: K49
+  args:
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/config.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/mda_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/meta_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K49/configs/rnaviral_mode.info
+  config_dir: K49
+  del_after: []
+  output_files: []
+  path: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core
+  short_name: k49
+- STAGE: K73
+  args:
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/config.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/mda_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/meta_mode.info
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/configs/rnaviral_mode.info
+  config_dir: K73
+  del_after: []
+  output_files: []
+  path: /home/lili.li/.conda/envs/D_EV_LAL/bin/spades-core
+  short_name: k73
+- STAGE: Copy files
+  args:
+  - /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/copy_files.py
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/before_rr.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/before_rr.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_after_simplification.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph_after_simplification.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/final_contigs.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/contigs.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/first_pe_contigs.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/first_pe_contigs.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/strain_graph.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/strain_graph.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/scaffolds.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.fasta
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/scaffolds.paths
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.paths
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph_with_scaffolds.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph_with_scaffolds.gfa
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/assembly_graph.fastg
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/assembly_graph.fastg
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/K73/final_contigs.paths
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_mmfd46zz
+  output_files: []
+  path: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /home/lili.li/.conda/envs/D_EV_LAL/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/scaffolds.fasta
+  - --misc_dir
+  - /home/proj/development/microbial/metagenomics/enterovirus/results/111111/spades/test_sample/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /home/lili.li/.conda/envs/D_EV_LAL/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate
