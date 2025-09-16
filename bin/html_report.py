@@ -20,13 +20,13 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
         Examples:
-        python EV_typing.py --ticket-nr 1003460 --blast-file /path/to/sample.blast
+        python html_report.py --ticket-nr 1003460 --blast-file /path/to/sample.blast
 
         # Tune suggestion criteria or disable it:
-        python EV_typing.py --ticket-nr 1003460 --blast-file sample.blast \
+        python html_report.py --ticket-nr 1003460 --blast-file sample.blast \
             --suggest-min-rows 20 --suggest-min-identity 90 --suggest-min-bitscore 400
 
-        python EV_typing.py --ticket-nr 1003460 --blast-file sample.blast --no-suggest
+        python html_report.py --ticket-nr 1003460 --blast-file sample.blast --no-suggest
         """
     )
     parser.add_argument ('--ticket-nr', type=int, required=True, help='Ticket number')
