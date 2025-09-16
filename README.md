@@ -1,6 +1,4 @@
-# Enterovirus genotyping
-
-Minimal pipeline for **Enterovirus genotyping** from **Illumina paired-end amplicons**.
+**EVICT**(Enterovirus Variant Identification and Contig Typing): Minimal pipeline for **Enterovirus genotyping** from **Illumina paired-end amplicons**.
 Reads are pre-processed with **[nf-core/taxprofiler](https://github.com/nf-core/taxprofiler)** (adapter/primer trimming, low-complexity filtering, host-removal), then assembled with **SPAdes**, identified using **BLAST**. Enterovirus contigs are then extracted, filtered to retain only those longer than 200 bp with coverage greater than 50X, and summarized in a per-sample HTML report.
 
 ## Steps
