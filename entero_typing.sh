@@ -5,7 +5,6 @@
 #SBATCH -t 50:00:00
 #SBATCH -J EV_genotyping
 #SBATCH --qos normal
-#SBATCH --mem 180G
 
 # =====================
 # Config & Environment
@@ -43,21 +42,21 @@ sample=$2
 
 # ---- Conda env ----
 source /home/proj/stage/bin/miniconda3/etc/profile.d/conda.sh
-conda activate D_EV_LAL
+#conda activate D_EV_LAL
 
 set -u
 
 # ---- Paths (single source of truth) ----
 BASE_DIR="/home/proj/development/microbial/metagenomics/enterovirus"
 ASSETS_DIR="$BASE_DIR/assets"
-BIN_DIR="$BASE_DIR/bin"
+BIN_DIR="$ASSETS_DIR/bin"
 DATA_DIR="$BASE_DIR/data"
 RESULTS_DIR="$BASE_DIR/results"
 TAXP_DIR="$BASE_DIR/taxprofiler_results"
 
 CONFIG="$ASSETS_DIR/custom_taxprofiler.config"
 PARAMS="$ASSETS_DIR/params.json"
-PRIMERS="$ASSETS_DIR/primers_fw_rev_compliment.fasta"
+PRIMERS="$ASSETS_DIR/primers/primers_fw_rev_compliment.fasta"
 DB_DIR="/home/proj/development/microbial/metagenomics/databases/archive_latest_databases/blastdb/nt_viruses"
 BLAST_DB="$DB_DIR/nt_viruses"
 REF="/home/proj/development/microbial/metagenomics/references/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna"
@@ -157,8 +156,8 @@ run_taxprofiler() {
         --input "$DATA_DIR/${ticket}/${ticket}_samplesheet.csv" \
         --databases "$ASSETS_DIR/databases.csv" \
         --outdir "$TAXP_DIR/${ticket}" \
-        --save_preprocessed_reads --perform_shortread_qc \
-        --perform_shortread_complexityfilter --save_complexityfiltered_reads \
+        --perform_shortread_qc --perform_shortread_complexityfilter \
+        --save_complexityfiltered_reads \
         --perform_shortread_hostremoval --hostremoval_reference "$REF" \
         --save_hostremoval_index --save_hostremoval_bam --save_hostremoval_unmapped \
         --shortread_qc_adapterlist "$PRIMERS" \
@@ -188,8 +187,10 @@ run_spades() {
 
 run_blast() {
     log "Running BLAST for sample=$sample (ticket=$ticket)"
-    local outdir="$RESULTS_DIR/$ticket/blast"
-    mkdir -p "$outdir"
+    local outdir_blast="$RESULTS_DIR/$ticket/blast"
+    local outdir_genotype="$RESULTS_DIR/$ticket/genotype/"
+    mkdir -p "$outdir_blast"
+    mkdir -p "$outdir_genotype"
 
     local contigs_scaf="$RESULTS_DIR/$ticket/spades/$sample/scaffolds.fasta"
     local contigs_std="$RESULTS_DIR/$ticket/spades/$sample/contigs.fasta"
@@ -203,7 +204,7 @@ run_blast() {
         return 0
     fi
 
-    local final="$outdir/${sample}.blast"
+    local final="$outdir_blast/${sample}.blast"
     if [[ -s "$final" ]]; then
         log "BLAST already completed: $final"
         return 0
@@ -212,7 +213,7 @@ run_blast() {
     local taxid_list="$ASSETS_DIR/taxid_EV.txt"
     local header="$ASSETS_DIR/blast_header.txt"
     local tmp
-    tmp="$(mktemp "$outdir/${sample}.XXXXXX.tmp")"
+    tmp="$(mktemp "$outdir_blast/${sample}.XXXXXX.tmp")"
 
     export BLASTDB="$DB_DIR/"
     blastn -db "$BLAST_DB" -taxidlist "$taxid_list" -query "$query" \
@@ -222,10 +223,38 @@ run_blast() {
         -num_threads "$THREADS" \
         -out "$tmp"
 
+    # --- Check if BLAST produced any hits (tmp not empty) ---
+    local nlines
+    nlines=$(wc -l < "$tmp")
+    if [[ "$nlines" -eq 0 ]]; then
+        log "No BLAST hits for $sample (empty results); not saving .blast file."
+        rm -f "$tmp"
+        return 0
+    fi
     cat "$header" "$tmp" > "$final"
     rm -f "$tmp"
 
-    python "$BIN_DIR/blast_summary.py" "$final"
+    #python "$BIN_DIR/blast_summary.py" "$final" # generate a blast summary table
+}
+
+run_genotype() {
+    log "Running genotype prediction for sample=$sample (ticket=$ticket)"
+    local blast_csv="$RESULTS_DIR/$ticket/blast/${sample}.blast"
+    local outdir_genotype="$RESULTS_DIR/$ticket/genotype"
+    mkdir -p "$outdir_genotype"
+
+    if [[ ! -s "$blast_csv" ]]; then
+        log "⚠️  No BLAST file found for $sample — skipping genotype prediction"
+        return 0
+    fi
+
+    local csv_out="$outdir_genotype/${sample}_genotype.csv"
+
+    python "$BIN_DIR/genotype_prediction.py" \
+        --ticket-nr "$ticket" \
+        --blast-file "$blast_csv" \
+        --output "$csv_out"
+
 }
 
 extract_ev_contigs() {
@@ -275,8 +304,12 @@ extract_ev_contigs() {
 generate_report() {
     log "Generating genotyping report for sample=$sample (ticket=$ticket)"
     local blast_csv="$RESULTS_DIR/$ticket/blast/${sample}.blast"
+    local outdir="$RESULTS_DIR/$ticket/report"
+    mkdir -p "$outdir"
+
     if [[ -s "$blast_csv" ]]; then
-        python "$BIN_DIR/html_report.py" --ticket-nr "$ticket" --blast-file "$blast_csv"
+        python "$BIN_DIR/html_report.py" --ticket-nr "$ticket" \
+            --blast-file "$blast_csv" --output-dir "$RESULTS_DIR"
     else
         log "No BLAST hits for $sample; report skipped"
     fi
@@ -291,6 +324,7 @@ main() {
     run_taxprofiler
     run_spades
     run_blast
+    run_genotype
     extract_ev_contigs
     generate_report
     log "DONE ticket=$ticket sample=$sample"

@@ -60,8 +60,6 @@ def main():
         print(f"❌ Error: BLAST file not found: {blast_file}")
         sys.exit(1)
 
-    file_name = os.path.basename(blast_file)
-    seq_name = file_name.replace('.blast', '')
     os.makedirs(output_base, exist_ok=True)
     jinja_env = Environment(loader=BaseLoader())
 
@@ -202,6 +200,18 @@ center; gap: 0.5rem; }
 
             <div class="suggestion">
                 <b>Föreslagen tolkning: {{ suggestion }}</b>
+
+                {% if suggestion != "Automatisk tolkning avstängd." %}
+                <details style="margin-top: 0.8rem; font-size: 0.9em;">
+                    <summary>Visa detaljer (kriterier för genotyptolkning)</summary>
+                    <div class="details-content" style="margin-top: 0.5rem; font-size: 0.9em; line-height: 1.4;">
+                        <b>En genotyp föreslås om följande kriterier alla är uppfyllda:</b><br>
+                        • Genotypen har både det högsta värdet för identitet och bitscore<br>
+                        • Genotypen har den högsta medianen för både identitet och bitscore<br>
+                        • Genotypen har minst 20 träffar, minst 90% identitet samt minst 400 bitscore
+                    </div>
+                </details>
+                {% endif %}
             </div>
 
             {% if is_error_report %}
@@ -296,7 +306,6 @@ center; gap: 0.5rem; }
                                     suggest_min_identity,
                                     suggest_min_bitscore):
         file_name = os.path.basename(file_path)
-        seq_name = file_name.replace('.blast', '')
 
         df = pd.read_csv(file_path, header=0)
 
@@ -326,10 +335,10 @@ center; gap: 0.5rem; }
             try:
                 max_pident = df.loc[df['pident'].idxmax()]
                 max_bitscore = df.loc[df['bitscore'].idxmax()]
-                grouped_pident_means = df.groupby('scomname')['pident'].mean()
-                highest_mean_pident = grouped_pident_means.idxmax()
-                grouped_bitscore_means = df.groupby('scomname')['bitscore'].mean()
-                highest_mean_bitscore = grouped_bitscore_means.idxmax()
+                grouped_pident_medians = df.groupby('scomname')['pident'].median()
+                highest_median_pident = grouped_pident_medians.idxmax()
+                grouped_bitscore_medians = df.groupby('scomname')['bitscore'].median()
+                highest_median_bitscore = grouped_bitscore_medians.idxmax()
 
                 # NEW: count number of hits for the top species
                 species_counts = df['scomname'].value_counts()
@@ -341,8 +350,8 @@ center; gap: 0.5rem; }
                     (top_species_count >= suggest_min_rows) and
                     (df['pident'].max() >= suggest_min_identity) and
                     (df['bitscore'].max() >= suggest_min_bitscore) and
-                    (highest_mean_pident == max_pident['scomname']) and
-                    (highest_mean_bitscore == max_bitscore['scomname'])
+                    (highest_median_pident == max_pident['scomname']) and
+                    (highest_median_bitscore == max_bitscore['scomname'])
                 ):
                     suggestion = str(max_pident['scomname'])
                 else:
@@ -363,15 +372,15 @@ center; gap: 0.5rem; }
         if n_contigs == 0 or n_scomname == 0:
             raise ValueError(f"Invalid contig or genotype count for {file_name}")
 
-        pident_means = df.groupby('scomname')['pident'].mean().sort_values(ascending=True)
-        bitscore_means = df.groupby('scomname')['bitscore'].mean().sort_values(ascending=True)
-        coverage_means = df.groupby('contig')['coverage'].mean().sort_values(ascending=True)
-        length_means = df.groupby('contig')['qlen'].mean().sort_values(ascending=True)
+        pident_medians = df.groupby('scomname')['pident'].median().sort_values(ascending=True)
+        bitscore_medians = df.groupby('scomname')['bitscore'].median().sort_values(ascending=True)
+        coverage_medians = df.groupby('contig')['coverage'].median().sort_values(ascending=True)
+        length_medians = df.groupby('contig')['qlen'].median().sort_values(ascending=True)
 
-        pident_order = pident_means.index.tolist()
-        bitscore_order = bitscore_means.index.tolist()
-        coverage_order = coverage_means.index.tolist()
-        length_order = length_means.index.tolist()
+        pident_order = pident_medians.index.tolist()
+        bitscore_order = bitscore_medians.index.tolist()
+        coverage_order = coverage_medians.index.tolist()
+        length_order = length_medians.index.tolist()
 
         if n_scomname+n_contigs == 2:
             fig_height = 3
@@ -493,7 +502,6 @@ center; gap: 0.5rem; }
 
     def generate_error_report_data(file_path):
         file_name = os.path.basename(file_path)
-        seq_name = file_name.replace('.blast', '')
 
         img_data_uri = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=="
         contigs_content = ""
@@ -521,15 +529,15 @@ center; gap: 0.5rem; }
                 print(f"Warning: Invalid contig or genotype count for {file_name}")
                 return img_data_uri, contigs_content, contigs_summary, contig_count
 
-            pident_means = df.groupby('scomname')['pident'].mean().sort_values(ascending=True)
-            bitscore_means = df.groupby('scomname')['bitscore'].mean().sort_values(ascending=True)
-            coverage_means = df.groupby('contig')['coverage'].mean().sort_values(ascending=True)
-            length_means = df.groupby('contig')['qlen'].mean().sort_values(ascending=True)
+            pident_medians = df.groupby('scomname')['pident'].median().sort_values(ascending=True)
+            bitscore_medians = df.groupby('scomname')['bitscore'].median().sort_values(ascending=True)
+            coverage_medians = df.groupby('contig')['coverage'].median().sort_values(ascending=True)
+            length_medians = df.groupby('contig')['qlen'].median().sort_values(ascending=True)
 
-            pident_order = pident_means.index.tolist()
-            bitscore_order = bitscore_means.index.tolist()
-            coverage_order = coverage_means.index.tolist()
-            length_order = length_means.index.tolist()
+            pident_order = pident_medians.index.tolist()
+            bitscore_order = bitscore_medians.index.tolist()
+            coverage_order = coverage_medians.index.tolist()
+            length_order = length_medians.index.tolist()
 
             if n_scomname+n_contigs == 2:
                 fig_height = 3
@@ -737,4 +745,3 @@ center; gap: 0.5rem; }
 
 if __name__ == "__main__":
     main()
-
