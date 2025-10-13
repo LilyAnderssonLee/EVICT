@@ -45,7 +45,7 @@ def suggest_genotype(df, suggest_min_rows=20,
 
 def main():
     parser = argparse.ArgumentParser(description="Summarize genotype suggestion from BLAST file")
-    parser.add_argument("--ticket-nr", type=int, required=True, help="Ticket number")
+    parser.add_argument("--ticket", type=str, required=True, help="Ticket")
     parser.add_argument("--blast-file", type=str, required=True, help="Path to BLAST result file (.blast)")
     parser.add_argument("--output", type=str, default="genotype.csv", help="Output CSV path")
     parser.add_argument("--suggest-min-rows", type=int, default=20,
@@ -86,7 +86,7 @@ def main():
         )
 
     out_df = pd.DataFrame([{
-        "Ticket": args.ticket_nr,
+        "Ticket": args.ticket,
         "Sample": sample_name,
         "Genotype": genotype
     }])
@@ -95,7 +95,7 @@ def main():
     header = not os.path.exists(args.output)
     out_df.to_csv(args.output, index=False, mode="a", header=header, encoding="utf-8-sig")
 
-    print(f"✅ Added: Ticket {args.ticket_nr}, Sample {sample_name}, Genotype: {genotype}")
+    print(f"✅ Added: Ticket {args.ticket}, Sample {sample_name}, Genotype: {genotype}")
     print(f"📄 Saved/updated summary: {args.output}")
 
 

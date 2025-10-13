@@ -20,16 +20,16 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
         Examples:
-        python html_report.py --ticket-nr 1003460 --blast-file /path/to/sample.blast
+        python html_report.py --ticket 1003460 --blast-file /path/to/sample.blast
 
         # Tune suggestion criteria or disable it:
-        python html_report.py --ticket-nr 1003460 --blast-file sample.blast \
+        python html_report.py --ticket 1003460 --blast-file sample.blast \
             --suggest-min-rows 20 --suggest-min-identity 90 --suggest-min-bitscore 400
 
-        python html_report.py --ticket-nr 1003460 --blast-file sample.blast --no-suggest
+        python html_report.py --ticket 1003460 --blast-file sample.blast --no-suggest
         """
     )
-    parser.add_argument ('--ticket-nr', type=int, required=True, help='Ticket number')
+    parser.add_argument ('--ticket', type=str, required=True, help='Ticket')
     parser.add_argument('--blast-file', type=str, required=True, help='Path to the BLAST result file (.blast)')
     parser.add_argument('--output-dir', type=str, default='results', help='Base output directory')
     parser.add_argument('--dpi', type=int, default=300, help='DPI for output plots')
@@ -45,7 +45,7 @@ def main():
                         help='Disable automated genotype suggestion')
 
     args = parser.parse_args()
-    ticket_nr = args.ticket_nr
+    ticket = args.ticket
     blast_file = args.blast_file
     output_base = args.output_dir
     plot_dpi = args.dpi
@@ -180,7 +180,7 @@ center; gap: 0.5rem; }
             <div class="metadata-grid">
                 <div class="metadata-item">
                     <span class="metadata-label">Ticket:</span>
-                    <span class="metadata-value">{{ ticket_nr }}</span>
+                    <span class="metadata-value">{{ ticket }}</span>
                 </div>
                 <div class="metadata-item">
                     <span class="metadata-label">Utförd:</span>
@@ -326,7 +326,7 @@ center; gap: 0.5rem; }
         if df.empty or df['contig'].nunique() == 0:
             raise ValueError(f"No contigs meet filtering criteria (≥200bp length, ≥50x coverage) for {file_name}")
 
-        seq_file = f"{output_base}/{ticket_nr}/ev_contig/{file_name.replace('.blast', '_200bp_minCov50.fasta')}"
+        seq_file = f"{output_base}/{ticket}/ev_contig/{file_name.replace('.blast', '_200bp_minCov50.fasta')}"
         if not os.path.exists(seq_file):
             raise FileNotFoundError(f"Filtered FASTA file not found: {seq_file}")
 
@@ -652,7 +652,7 @@ center; gap: 0.5rem; }
 
         # Read fasta file (unfiltered original)
         try:
-            seq_file_original = f"{output_base}/{ticket_nr}/ev_contig/{file_name.replace('.blast', '.fasta')}"
+            seq_file_original = f"{output_base}/{ticket}/ev_contig/{file_name.replace('.blast', '.fasta')}"
             if os.path.exists(seq_file_original):
                 with open(seq_file_original, 'r') as contigs_file:
                     contigs_content = contigs_file.read()
@@ -687,7 +687,7 @@ center; gap: 0.5rem; }
 
         template_data = {
             'seq_name': seq_name,
-            'ticket_nr': ticket_nr,
+            'ticket': ticket,
             'time_stamp': time_stamp,
             'is_error_report': is_error,
             'varningstext': varningstext,
@@ -701,7 +701,7 @@ center; gap: 0.5rem; }
         template = jinja_env.from_string(UNIFIED_TEMPLATE)
         html_content = template.render(**template_data)
 
-        report_folder = f"{output_base}/{ticket_nr}/report"
+        report_folder = f"{output_base}/{ticket}/report"
         os.makedirs(report_folder, exist_ok=True)
         with open(f"{report_folder}/{seq_name}.html", "w", encoding='utf-8') as html_file:
             html_file.write(html_content)
@@ -740,7 +740,7 @@ center; gap: 0.5rem; }
     print("\n" + "="*50)
     print("PROCESSING COMPLETE")
     print("="*50)
-    print(f"📁 Report saved to: {output_base}/{ticket_nr}/report/")
+    print(f"📁 Report saved to: {output_base}/{ticket}/report/")
     print("="*50)
 
 if __name__ == "__main__":
