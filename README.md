@@ -1,7 +1,12 @@
-<h1 align="center">
-  <img src="assets/EVICT_logo.png" alt="EVICT Enterovirus Typing Pipeline" width="220"><br>
-  EVICT – Enterovirus Variant Identification and Contig Typing
-</h1>
+<p align="center">
+  <img src="assets/EVICT_logo.png" alt="EVICT Enterovirus Typing Pipeline" width="180">
+</p>
+
+<h1 align="center">EVICT</h1>
+
+<p align="center">
+  <i>Enterovirus Variant Identification and Contig Typing</i>
+</p>
 
 
 **EVICT**(Enterovirus Variant Identification and Contig Typing): Minimal pipeline for **Enterovirus genotyping** from **Illumina paired-end amplicons**.
