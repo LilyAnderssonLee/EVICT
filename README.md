@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/EVICT_logo.png" alt="EVICT Enterovirus Typing Pipeline" width="180">
+  <img src="assets/EVICT_logo.png" alt="EVICT Enterovirus Typing Pipeline" width="240">
 </p>
 
 <h1 align="center">EVICT</h1>
