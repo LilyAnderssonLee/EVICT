@@ -1,0 +1,7 @@
+- "left reads":
+  - "/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/ticket_id/bowtie2/align/sample_name_sample_name.unmapped_1.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/home/proj/development/microbial/metagenomics/enterovirus/taxprofiler_results/ticket_id/bowtie2/align/sample_name_sample_name.unmapped_2.fastq.gz"
+  "type": "paired-end"

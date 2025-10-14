@@ -1,3 +1,0 @@
-qseqid,taxid,scomname,count,min_pident,max_pident,median_pident,min_length,max_length,median_length,min_bitscore,max_bitscore,median_bitscore
-NODE_2_length_424_cov_518478.307692,12072.0,Coxsackievirus B3,58,80.818,93.831,89.8675,219.0,329.0,319.0,248.0,468.0,393.0
-NODE_2_length_424_cov_518478.307692,35293.0,Echovirus E12,5,72.692,74.713,73.359,259.0,265.0,261.0,73.1,100.0,84.2

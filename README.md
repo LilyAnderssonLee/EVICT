@@ -54,15 +54,15 @@ nextflow run nf-core/taxprofiler -r 1.2.3 -profile docker \
   --outdir taxprofiler_results/${ticket} \
   --save_preprocessed_reads --perform_shortread_qc \
   --perform_shortread_complexityfilter --save_complexityfiltered_reads \
-  --perform_shortread_hostremoval --hostremoval_reference /home/proj/development/microbial/metagenomics/references/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna \
+  --perform_shortread_hostremoval --hostremoval_reference /path/to/GCF_009914755.1_T2T-CHM13v2.0_genomic.fna \
   --shortread_qc_adapterlist assets/primers_fw_rev_compliment.fasta \
   -params-file assets/params.json -c assets/custom_taxprofiler.config -resume
 
 # 2) post-steps inside your Docker image (adjust <sample_id>)
 sample=test_sample
 docker run --rm -it \
-  -v "$(pwd)":/home/proj/development/microbial/metagenomics/enterovirus \
-  -w /home/proj/development/microbial/metagenomics/enterovirus \
+  -v "$(pwd)":/path/to/volumn_mount/dir/enterovirus \
+  -w /path/to/working/dir/enterovirus \
   lilyanderssonlee2020/evtyping:1.0 \
   bash -lc "assets/pipeline_refactor.sh ${ticket} ${sample}"
 ```
@@ -109,7 +109,7 @@ taxprofiler_results/<ticket_id>/
 - **bbduk/** – low-complexity–filtered reads
 - **bowtie2/** – host-removal outputs (alignments and unmapped FASTQs); reads unmapped to the human genome are used for SPAdes analysis.
 
-To check the final **html report** in `example_results/1003460/report/`, please download and open it with your browser.
+To check the final **html report** in `example_results/ticket_id/report/`, please download and open it with your browser.
 
 # Future plan
 

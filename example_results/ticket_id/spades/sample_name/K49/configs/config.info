@@ -6,21 +6,21 @@
 #include "detail_info_printer.info"
 #include "pe_params.info"
 
-K 73
+K 49
 ;FIXME introduce isolate mode
 mode base
 
-dataset /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/dataset.info
+dataset /home/proj/development/microbial/metagenomics/enterovirus/results/ticket_id/spades/sample_name/dataset.info
 log_filename    log.properties
 
-output_base /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1
-tmp_dir /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/tmp/spades_mmfd46zz
+output_base /home/proj/development/microbial/metagenomics/enterovirus/results/ticket_id/spades/sample_name
+tmp_dir /home/proj/development/microbial/metagenomics/enterovirus/results/ticket_id/spades/sample_name/tmp/spades_mmfd46zz
 
-main_iteration true
+main_iteration false
 ; iterative mode switcher, activates additional contigs usage
 use_additional_contigs true
-additional_contigs /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K49/simplified_contigs
-load_from /home/proj/development/microbial/metagenomics/enterovirus/results/1003460/spades/24CA117290-VP1/K73/saves
+additional_contigs /home/proj/development/microbial/metagenomics/enterovirus/results/ticket_id/spades/sample_name/K21/simplified_contigs
+load_from /home/proj/development/microbial/metagenomics/enterovirus/results/ticket_id/spades/sample_name/K49/saves
 
 ; Multithreading options
 temp_bin_reads_dir	.bin_reads/
@@ -44,7 +44,7 @@ sewage_matrix /home/lili.li/.conda/envs/D_EV_LAL/share/spades/sewage/usher_barco
 scaffold_correction_mode false
 
 ; enabled (1) or disabled (0) repeat resolution (former "paired_mode")
-rr_enable true
+rr_enable false
 ; 0 for graph N50
 min_edge_length_for_is_count 0
 
@@ -76,7 +76,7 @@ compute_paths_number false
 ; End of developer_mode parameters
 
 ;if true simple mismatches are corrected
-correct_mismatches          true
+correct_mismatches false
 
 ; set it true to get statistics, such as false positive/negative, perfect match, etc.
 paired_info_statistics false
@@ -120,7 +120,7 @@ pos
 
 }
 
-gap_closer_enable true
+gap_closer_enable false
 
 gap_closer
 {
