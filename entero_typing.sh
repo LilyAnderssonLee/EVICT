@@ -271,6 +271,7 @@ extract_ev_contigs() {
     if [[ -s "$contigs_scaf" ]]; then source_fa="$contigs_scaf"; else source_fa="$contigs_std"; fi
     [[ -s "$source_fa" ]] || { log "No contig fasta for $sample; skipping"; return 0; }
 
+    local fasta_tmp="$outdir/${sample}_tmp.fasta"
     local fasta_out="$outdir/${sample}.fasta"
     local fasta_200="$outdir/${sample}_200bp.fasta"
     local fasta_cov50="$outdir/${sample}_200bp_minCov50.fasta"
@@ -280,11 +281,15 @@ extract_ev_contigs() {
 
     # Extract matching contigs
     if [[ -s "$outdir/${sample}.ids.txt" ]]; then
-        seqkit grep -f "$outdir/${sample}.ids.txt" "$source_fa" > "$fasta_out"
+        seqkit grep -f "$outdir/${sample}.ids.txt" "$source_fa" > "$fasta_tmp"
     else
         log "No matching contig IDs in BLAST for $sample"
         return 0
     fi
+
+    # Reverse-complement contigs whose BLAST hits are in reverse orientation (sstart > send)
+    python "$BIN_DIR/reverse_complement_contigs.py" --blast "$blast_csv" --fasta "$fasta_tmp" --output_fasta "$fasta_out"
+    rm "$fasta_tmp"
 
     # Length >= 200, keep gaps (N) with -g
     seqkit seq -m 200 -g "$fasta_out" > "$fasta_200"

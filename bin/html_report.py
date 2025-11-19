@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf-8
 
 import pandas as pd
 import seaborn as sns
@@ -35,11 +34,11 @@ def main():
     parser.add_argument('--dpi', type=int, default=300, help='DPI for output plots')
 
     # NEW: tunables for genotype suggestion
-    parser.add_argument('--suggest-min-rows', type=int, default=10,
+    parser.add_argument('--suggest-min-rows', type=int, default=20,
                         help='Minimum number of rows (hits) required to consider auto-suggestion (default: 20)')
     parser.add_argument('--suggest-min-identity', type=float, default=90.0,
                         help='Minimum max %% identity required to consider auto-suggestion (default: 90)')
-    parser.add_argument('--suggest-min-bitscore', type=float, default=300,
+    parser.add_argument('--suggest-min-bitscore', type=float, default=400,
                         help='Minimum max bitscore required to consider auto-suggestion (default: 400)')
     parser.add_argument('--no-suggest', action='store_true',
                         help='Disable automated genotype suggestion')
